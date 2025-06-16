@@ -14,20 +14,20 @@ export const LanguageIcon: React.FC<IIconProps> = (props) => {
             <path
                 d='M9.99716 19.09C15.0179 19.09 19.0881 15.0199 19.0881 9.99911C19.0881 4.97834 15.0179 0.908203 9.99716 0.908203C4.97639 0.908203 0.90625 4.97834 0.90625 9.99911C0.90625 15.0199 4.97639 19.09 9.99716 19.09Z'
                 stroke='currentColor'
-                stroke-width='1.1'
-                stroke-linecap='square'
+                strokeWidth='1.1'
+                strokeLinecap='square'
             />
             <path
                 d='M9.99574 19.09C12.42 16.8862 13.6321 13.8559 13.6321 9.99911C13.6321 6.14236 12.42 3.11206 9.99574 0.908203C7.5715 3.11206 6.35938 6.14236 6.35938 9.99911C6.35938 13.8559 7.5715 16.8862 9.99574 19.09Z'
                 stroke='currentColor'
-                stroke-width='1.1'
-                stroke-linecap='round'
+                strokeWidth='1.1'
+                strokeLinecap='round'
             />
             <path
                 d='M1.35938 7.27148H18.6321M1.35938 12.726H18.6321'
                 stroke='currentColor'
-                stroke-width='1.1'
-                stroke-linecap='round'
+                strokeWidth='1.1'
+                strokeLinecap='round'
             />
         </svg>
     );
