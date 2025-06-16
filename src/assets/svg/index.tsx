@@ -41,3 +41,4 @@ export { Usdt } from './USDT';
 export { Visa } from './Visa';
 export { XRP } from './XRP';
 export { GameCare } from './GameCare';
+export { Search } from './Search';
