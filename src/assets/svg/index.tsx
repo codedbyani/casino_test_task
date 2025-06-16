@@ -23,3 +23,5 @@ export { DepositIcon } from './DepositIcon';
 export { MobileHomeIcon } from './MobileHomeIcon';
 export { NotificationIcon } from './NotificationIcon';
 export { UserIcon } from './UserIcon';
+export { DollarIcon } from './DollarIcon';
+export { DepositMobileIcon } from './DepositMobileIcon';

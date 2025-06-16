@@ -13,6 +13,7 @@ const config: Config = {
                     500: '#10202D',
                     600: '#10212E',
                     700: '#0F70DC',
+                    800: '#192C40',
                 },
                 gray: {
                     200: '#C1C9E5',
@@ -32,6 +33,13 @@ const config: Config = {
                     {
                         lineHeight: '12px',
                         fontWeight: '400',
+                    },
+                ],
+                md: [
+                    '14px',
+                    {
+                        lineHeight: '16px',
+                        fontWeight: '500',
                     },
                 ],
             },
