@@ -31,3 +31,30 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+.custom-pagination {
+  width: 100%;
+  background: transparent;
+  position: relative;
+  z-index: 9999;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px!important;
+  height: 5px!important;
+  background: transparent!important;
+  font-weight: bold;
+  border: 1px solid #0F70DC;
+  border-radius: 5px!important;
+  transition: 0.3s;
+  margin: 0!important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0F70DC!important;
+  color: white;
+}
