@@ -1,9 +1,5 @@
-import { NoCrypto } from "@/components/molecules/NoCrypto";
-
 const Home: React.FC = () => {
-    return <div className='container'>
-        <NoCrypto />
-    </div>;
+    return <div className='container'></div>;
 };
 
 export default Home;

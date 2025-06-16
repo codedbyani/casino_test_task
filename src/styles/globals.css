@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1C2E3D;
     --foreground: #ededed;
   }
 }
@@ -29,6 +29,12 @@ body {
   max-width: 1200px;
   width: calc(100% - 60px);
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 20px);
+  }
 }
 
 *{

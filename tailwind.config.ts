@@ -18,6 +18,7 @@ const config: Config = {
                     700: '#0F70DC',
                     800: '#192C40',
                     900: '#253241',
+                    950: '#1E2B38',
                 },
                 gray: {
                     200: '#C1C9E5',
@@ -39,14 +40,21 @@ const config: Config = {
                     '10px',
                     {
                         lineHeight: '12px',
-                        fontWeight: '400',
+                        fontWeight: 400,
                     },
                 ],
                 md: [
                     '14px',
                     {
                         lineHeight: '16px',
-                        fontWeight: '500',
+                        fontWeight: 500,
+                    },
+                ],
+                lg: [
+                    '18px',
+                    {
+                        lineHeight: '20px',
+                        fontWeight: 700,
                     },
                 ],
             },
