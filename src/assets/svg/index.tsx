@@ -42,3 +42,8 @@ export { Visa } from './Visa';
 export { XRP } from './XRP';
 export { GameCare } from './GameCare';
 export { Search } from './Search';
+export { BoltIcon } from './Bolt';
+export { ChipIcon } from './Chip';
+export { FireIcon } from './Fire';
+export { LayersIcon } from './Layers';
+export { MedalIcon } from './MedalIcon';

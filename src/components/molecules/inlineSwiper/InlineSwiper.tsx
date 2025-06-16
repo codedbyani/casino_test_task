@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useId } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import { FreeMode, Navigation, Pagination } from 'swiper/modules';
@@ -12,6 +12,12 @@ interface IInlineSwiper {
 }
 
 export const InlineSwiper: React.FC<IInlineSwiper> = ({ swiperSlides, title, icon }) => {
+    const uniqueId = useId();
+
+    const prevClass = `swiper-prev-${uniqueId}`;
+    const nextClass = `swiper-next-${uniqueId}`;
+    const paginationClass = `custom-pagination-${uniqueId}`;
+
     return <div className="flex flex-col gap-[15px] overflow-hidden">
         <div className="flex w-full justify-between items-center">
             <div className="flex items-center gap-[10px]">
@@ -20,11 +26,11 @@ export const InlineSwiper: React.FC<IInlineSwiper> = ({ swiperSlides, title, ico
             </div>
             <div className="flex gap-[10px]">
                 <div
-                    className="swiper-button-prev cursor-pointer flex justify-center items-center !static w-[35px] h-[35px] border-2 border-[#253241] rounded-[5px]">
+                    className={`${prevClass} cursor-pointer flex justify-center items-center !static w-[35px] h-[35px] border-2 border-[#253241] rounded-[5px]`}>
                     <ArrowRight className="transform rotate-180" />
                 </div>
                 <div
-                    className="swiper-button-next cursor-pointer flex justify-center items-center !static w-[35px] h-[35px] border-2 border-[#253241] rounded-[5px]">
+                    className={`${nextClass} cursor-pointer flex justify-center items-center !static w-[35px] h-[35px] border-2 border-[#253241] rounded-[5px]`}>
                     <ArrowRight />
                 </div>
             </div>
@@ -50,8 +56,8 @@ export const InlineSwiper: React.FC<IInlineSwiper> = ({ swiperSlides, title, ico
             }
             modules={[Pagination, FreeMode, Navigation]}
             navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: `.${nextClass}`,
+                prevEl: `.${prevClass}`,
                 disabledClass: 'opacity-50',
             }}
             className="h-[340px] w-full"
