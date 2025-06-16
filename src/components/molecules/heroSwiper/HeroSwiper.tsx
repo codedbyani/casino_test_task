@@ -3,16 +3,16 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import { HERO_SWIPER_SLIDES } from '@/utils/constants';
 import Image from 'next/image';
 
-export const HeroSwiper: React.FC = () => {
+interface IHeroSwiper {
+    items: string[];
+}
+
+export const HeroSwiper: React.FC<IHeroSwiper> = ({ items }) => {
     return (
-        <div className="w-full">
+        <div className='w-full'>
             <Swiper
-                style={{
-                    paddingBottom: '40px',
-                }}
                 breakpoints={{
                     1024: {
                         slidesPerView: 2,
@@ -22,27 +22,28 @@ export const HeroSwiper: React.FC = () => {
                     },
                 }}
                 spaceBetween={10}
-                pagination={
-                    {
-                        el: '.custom-pagination',
-                        clickable: true,
-                        renderBullet: (_, className) => {
-                            return `<span class="${className}"></span>`;
-                        },
-                    }
-                }
+                pagination={{
+                    el: '.custom-pagination',
+                    clickable: true,
+                    renderBullet: (_, className) => {
+                        return `<span class="${className}"></span>`;
+                    },
+                }}
                 modules={[Pagination]}
-                className="h-[340px]"
+                className='h-[340px] !pb-10 max-md:!h-[240px]'
             >
-                {
-                    HERO_SWIPER_SLIDES.map((slide, index) => (
-                        <SwiperSlide key={index}>
-                            <Image src={slide} alt={`Hero swiper slide ${index + 1}`} fill className="rounded-[5px]" />
-                        </SwiperSlide>
-                    ))
-                }
-                <div className="custom-pagination"></div>
+                {items.map((slide, index) => (
+                    <SwiperSlide key={index}>
+                        <Image
+                            src={slide}
+                            alt={`Hero swiper slide ${index + 1}`}
+                            fill
+                            className='rounded-[5px] object-fill'
+                        />
+                    </SwiperSlide>
+                ))}
+                <div className='custom-pagination'></div>
             </Swiper>
         </div>
-)
+    );
 };

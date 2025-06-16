@@ -14,7 +14,7 @@ const IMAGE_PATHS: string[] = [
 
 export const NoCrypto: React.FC = () => {
     return (
-        <div className='bg-blue-500 border-[1px] border-blue-900 p-[25px] flex gap-10 items-center flex-col md:flex-row'>
+        <div className='bg-blue-500 border-[1px] border-blue-900 p-[25px] flex gap-10 items-center flex-col my-[15px] md:mt-[30px] md:mb-[20px] md:flex-row'>
             <p className='text-xl leading-[25px] font-bold tracking-[0.2px] text-white text-center md:text-left'>
                 You don’t have Crypto?
                 <br />

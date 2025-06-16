@@ -3,7 +3,7 @@ import { Button } from '../atoms/Button';
 
 export const AboutUs: React.FC = () => {
     return (
-        <div className='bg-blue-500 border-[1px] w-full border-blue-100 rounded-[4px] relative'>
+        <div className='bg-blue-500 border-[1px] w-full mb-5 md:mb-[30px] border-blue-100 rounded-[4px] relative'>
             <div className='absolute bg-linear-to-t to-transparent from-blue-500 h-full w-full t-0 l-0 hidden md:block' />
             <div className='pl-[14px] pr-[17px] py-[14px]'>
                 <h1 className='text-lg pb-3 '>******* Casino</h1>

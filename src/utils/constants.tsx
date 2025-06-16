@@ -1,12 +1,26 @@
-import { BoltIcon, ChipIcon, CronCircle, FireIcon, LayersIcon, MedalIcon } from '@/assets/svg';
+import {
+    BlackJackV2Icon,
+    BoltIcon,
+    ChipIcon,
+    CrashIcon,
+    CronCircle,
+    DiceIcon,
+    FireIcon,
+    FlatIcon,
+    LayersIcon,
+    LiveDealersIcon,
+    MedalIcon,
+    RouletteIcon,
+    SlotsIcon,
+} from '@/assets/svg';
 
 export const HERO_SWIPER_SLIDES = [
-    '/images/hero_slider_1.png',
-    '/images/hero_slider_2.png',
-    '/images/hero_slider_1.png',
-    '/images/hero_slider_2.png',
-    '/images/hero_slider_1.png',
-    '/images/hero_slider_2.png',
+    '/images/png/hero_slider_1.png',
+    '/images/png/hero_slider_2.png',
+    '/images/png/hero_slider_1.png',
+    '/images/png/hero_slider_2.png',
+    '/images/png/hero_slider_1.png',
+    '/images/png/hero_slider_2.png',
 ];
 
 export const FEATURED_GAMES_SLIDES = [
@@ -24,6 +38,32 @@ export const FEATURED_GAMES_SLIDES = [
     '/images/featuredGames/5.png',
     '/images/featuredGames/6.png',
     '/images/featuredGames/7.png',
+];
+
+export const ADVERTISMENT_IMAGES = {
+    BIG: ['/images/png/welcome_bonus.png', '/images/png/cash_back.png'],
+    SMALL: [
+        '/images/png/drops_wins.png',
+        '/images/png/wager_race.png',
+        '/images/png/octoplay.png',
+        '/images/png/big_time_gaming.png',
+    ],
+};
+
+export const FILTER_ITEMS = [
+    { icon: <FlatIcon width={20} height={20} />, label: 'All Games' },
+    { icon: <SlotsIcon width={20} height={20} />, label: 'Slots' },
+    { icon: <BlackJackV2Icon width={20} height={20} />, label: 'Blackjack' },
+    { icon: <RouletteIcon width={20} height={20} />, label: 'Roulette' },
+    { icon: <LiveDealersIcon width={20} height={20} />, label: 'Live' },
+    { icon: <CrashIcon width={20} height={20} />, label: 'Baccarat' },
+    { icon: <CrashIcon width={20} height={20} />, label: 'Crash' },
+    { icon: <DiceIcon width={20} height={20} />, label: 'Dice' },
+];
+
+export const FILTER_ITEMS_SELECT = [
+    [{ icon: <DiceIcon width={20} height={20} />, label: 'Collections', value: 'collections' }],
+    [{ icon: <DiceIcon width={20} height={20} />, label: 'Providers', value: 'providers' }],
 ];
 
 export const BONUS_BUY_SLIDES = [
@@ -112,10 +152,23 @@ export const PROVIDERS_SLIDES = [
 ];
 
 export const SWIPER_SLIDES = [
-    { label: 'Featured Games', slides: FEATURED_GAMES_SLIDES, icon: CronCircle },
-    { label: 'New Releases', slides: NEW_RELEASE_SLIDES, icon: BoltIcon },
-    { label: 'Hot Games', slides: HOT_GAMES_SLIDES, icon: FireIcon },
-    { label: 'Bonus Buy', slides: BONUS_BUY_SLIDES, icon: MedalIcon },
-    { label: 'Live Games', slides: LIVE_GAMES_SLIDES, icon: ChipIcon },
-    { label: 'Providers', slides: PROVIDERS_SLIDES, icon: LayersIcon, slideClasses: '!h-[50px] xs:!h-[60px]' },
+    {
+        label: 'Featured Games',
+        slides: FEATURED_GAMES_SLIDES,
+        icon: <CronCircle width={20} height={20} />,
+    },
+    {
+        label: 'New Releases',
+        slides: NEW_RELEASE_SLIDES,
+        icon: <BoltIcon width={20} height={20} />,
+    },
+    { label: 'Hot Games', slides: HOT_GAMES_SLIDES, icon: <FireIcon width={20} height={20} /> },
+    { label: 'Bonus Buy', slides: BONUS_BUY_SLIDES, icon: <MedalIcon width={20} height={20} /> },
+    { label: 'Live Games', slides: LIVE_GAMES_SLIDES, icon: <ChipIcon width={20} height={20} /> },
+    {
+        label: 'Providers',
+        slides: PROVIDERS_SLIDES,
+        icon: <LayersIcon width={20} height={20} />,
+        slideClasses: '!h-[50px] xs:!h-[60px]',
+    },
 ];

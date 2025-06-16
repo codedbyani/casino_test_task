@@ -6,24 +6,19 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     inputClassName?: string;
 }
 
-export const Input: React.FC<InputProps> = (
-    {
-        icon,
-        wrapperClassName = '',
-        inputClassName = '',
-        className = '',
-        ...props
-    }) => {
+export const Input: React.FC<InputProps> = ({
+    icon,
+    wrapperClassName = '',
+    inputClassName = '',
+    className = '',
+    ...props
+}) => {
     return (
         <div className={`relative flex items-center w-full ${wrapperClassName}`}>
-            {icon && (
-                <div className="absolute left-3 top-1/2 -translate-y-1/2">
-                    {icon}
-                </div>
-            )}
+            {icon && <div className='absolute left-[11px] top-1/2 -translate-y-1/2'>{icon}</div>}
             <input
-                className={`w-full rounded-[3px] border border-blue-100 text-md bg-blue-500 px-4 py-2 outline-none transition-all focus:ring-0 ${
-                    icon ? 'pl-11' : ''
+                className={`w-full rounded-[3px] border border-blue-100 text-md bg-blue-500 px-4 py-3 outline-none transition-all focus:ring-0 ${
+                    icon ? 'pl-[43px]' : ''
                 } ${inputClassName} ${className}`}
                 {...props}
             />

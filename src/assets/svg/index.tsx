@@ -1,4 +1,5 @@
 export { BlackjackIcon } from './BlackjackIcon';
+export { BlackJackV2Icon } from './BlackJackV2Icon';
 export { CollectionIcon } from './CollectionIcon';
 export { CrashIcon } from './CrashIcon';
 export { DiceIcon } from './DiceIcon';
@@ -47,3 +48,4 @@ export { ChipIcon } from './Chip';
 export { FireIcon } from './Fire';
 export { LayersIcon } from './Layers';
 export { MedalIcon } from './MedalIcon';
+export { FlatIcon } from './FlatIcon';
