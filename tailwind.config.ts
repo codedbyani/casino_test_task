@@ -18,6 +18,9 @@ const config: Config = {
                 gray: {
                     200: '#C1C9E5',
                 },
+                green: {
+                    400: '#34A853',
+                },
             },
             screens: {
                 xs: '480px',
