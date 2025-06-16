@@ -4,6 +4,9 @@ const config: Config = {
     content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
     theme: {
         extend: {
+            fontFamily: {
+                poppins: ['Poppins', 'sans-serif'],
+            },
             colors: {
                 blue: {
                     100: '#273344',
@@ -14,6 +17,7 @@ const config: Config = {
                     600: '#10212E',
                     700: '#0F70DC',
                     800: '#192C40',
+                    900: '#253241',
                 },
                 gray: {
                     200: '#C1C9E5',
