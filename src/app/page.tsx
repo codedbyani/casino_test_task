@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home: React.FC = () => {
-    return <div className="w-full"></div>;
+    return <div className='container'></div>;
 };
 
 export default Home;

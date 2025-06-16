@@ -4,6 +4,9 @@ const config: Config = {
     content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
     theme: {
         extend: {
+            fontFamily: {
+                poppins: ['Poppins', 'sans-serif'],
+            },
             colors: {
                 blue: {
                     100: '#273344',
@@ -13,9 +16,15 @@ const config: Config = {
                     500: '#10202D',
                     600: '#10212E',
                     700: '#0F70DC',
+                    800: '#192C40',
+                    900: '#253241',
+                    950: '#1E2B38',
                 },
                 gray: {
                     200: '#C1C9E5',
+                },
+                green: {
+                    400: '#34A853',
                 },
             },
             screens: {
@@ -31,7 +40,21 @@ const config: Config = {
                     '10px',
                     {
                         lineHeight: '12px',
-                        fontWeight: '400',
+                        fontWeight: 400,
+                    },
+                ],
+                md: [
+                    '14px',
+                    {
+                        lineHeight: '16px',
+                        fontWeight: 500,
+                    },
+                ],
+                lg: [
+                    '18px',
+                    {
+                        lineHeight: '20px',
+                        fontWeight: 700,
                     },
                 ],
             },
