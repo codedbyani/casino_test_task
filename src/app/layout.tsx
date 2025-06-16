@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import { SideBar } from '@/components/organismes/SideBar';
 import { Header } from '@/components/organismes/Header';
+import { Footer } from '@/components/molecules/Footer';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import '../styles/globals.css';
 
 const geistSans = Geist({
@@ -37,8 +38,9 @@ export default function RootLayout({
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Header />
                 <SideBar />
-                <div className='ml-15 pt-[75px] container'>
+                <div className='mt-15 md:ml-15'>
                     {children}
+                    <Footer />
                 </div>
             </body>
         </html>
