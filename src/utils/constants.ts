@@ -117,5 +117,5 @@ export const SWIPER_SLIDES = [
     { label: 'Hot Games', slides: HOT_GAMES_SLIDES, icon: FireIcon },
     { label: 'Bonus Buy', slides: BONUS_BUY_SLIDES, icon: MedalIcon },
     { label: 'Live Games', slides: LIVE_GAMES_SLIDES, icon: ChipIcon },
-    { label: 'Providers', slides: PROVIDERS_SLIDES, icon: LayersIcon },
+    { label: 'Providers', slides: PROVIDERS_SLIDES, icon: LayersIcon, slideClasses: '!h-[50px] xs:!h-[60px]' },
 ];

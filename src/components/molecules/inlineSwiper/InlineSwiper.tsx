@@ -9,14 +9,14 @@ interface IInlineSwiper {
     title: string;
     icon: React.ReactNode;
     swiperSlides: string[];
+    slideClasses?: string;
 }
 
-export const InlineSwiper: React.FC<IInlineSwiper> = ({ swiperSlides, title, icon }) => {
+export const InlineSwiper: React.FC<IInlineSwiper> = ({ swiperSlides, title, icon, slideClasses }) => {
     const uniqueId = useId();
 
     const prevClass = `swiper-prev-${uniqueId}`;
     const nextClass = `swiper-next-${uniqueId}`;
-    const paginationClass = `custom-pagination-${uniqueId}`;
 
     return <div className="flex flex-col gap-[15px] overflow-hidden">
         <div className="flex w-full justify-between items-center">
@@ -60,16 +60,17 @@ export const InlineSwiper: React.FC<IInlineSwiper> = ({ swiperSlides, title, ico
                 prevEl: `.${prevClass}`,
                 disabledClass: 'opacity-50',
             }}
-            className="h-[340px] w-full"
+            className="w-full"
         >
             {swiperSlides.map((slide, index) => (
-                <SwiperSlide key={index} className="xs:!w-[150px]">
+                <SwiperSlide key={index} className={`${slideClasses ?? '!h-[150px] xs:!h-[200px]'} xs:!w-[150px]`}>
+
                     <Image
                         src={slide}
                         alt={slide}
                         width={150}
                         height={200}
-                        className="h-[150] xs:h-[200px] select-none"
+                        className="h-full w-full select-none"
                     />
                 </SwiperSlide>
             ))}

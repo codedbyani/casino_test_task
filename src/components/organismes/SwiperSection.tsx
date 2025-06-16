@@ -12,6 +12,7 @@ export const SwiperSection: React.FC = () => {
                         title={slide.label}
                         icon={<slide.icon width={20} height={20} />}
                         swiperSlides={slide.slides}
+                        slideClasses={slide.slideClasses}
                     />
                 ))
             }
