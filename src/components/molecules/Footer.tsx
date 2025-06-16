@@ -6,7 +6,7 @@ import { Button, EButtonSize, EButtonVariant } from '../atoms/Button';
 
 export const Footer = () => {
     return (
-        <footer className=' text-white  w-full flex flex-col justify-center items-center mt-20'>
+        <footer className=' text-white  w-full flex flex-col justify-center items-center'>
             <div className='bg-blue-500 boxContainer mx-auto px-[25px] max-md:pt-[15px] pt-[35px] pb-[25px] max-md:pb-[10px]'>
                 <div className='flex gap-9 max-lg:flex-col'>
                     <div className='sm:col-span-2 md:col-span-3 lg:col-span-2 order-0 max-w-75'>
@@ -95,14 +95,14 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-blue-200 px-[10px] pt-[10px] pb-[70px] w-full max-sm:flex justify-between hidden '>
+            <div className='bg-blue-200 px-[10px] pt-[10px] pb-[70px] w-full max-sm:flex justify-between hidden gap-[10px]'>
                 <Button
                     children='LOG IN'
                     size={EButtonSize.BIG}
-                    className='w-[175px]'
+                    className='w-full'
                     variant={EButtonVariant.GREEN}
                 />
-                <Button children='SIGN UP' size={EButtonSize.BIG} className='w-[175px]' />
+                <Button children='SIGN UP' size={EButtonSize.BIG} className='w-full' />
             </div>
         </footer>
     );
